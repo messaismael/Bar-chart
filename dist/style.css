@@ -1,0 +1,95 @@
+body {
+  background-color: #BD8D46;
+}
+
+#graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+#graph #drawarea {
+  background: url(http://www.roofmedicok.com/wp-content/uploads/2014/04/graph-paper-background-slider.gif);
+  box-shadow: 4px 4px 20px 10px black;
+  border-radius: 8px 8px 6px 6px;
+}
+#graph #drawarea #title {
+  background-color: #663E10;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  border-radius: 6px 6px 0px 0px;
+}
+#graph #drawarea .title-lead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #663E10;
+  font-size: 20px;
+  height: 50px;
+  color: white;
+}
+
+@media (max-width: 925px) {
+  #graph {
+    position: absolute;
+  }
+}
+#x-axis path,
+#x-axis line,
+#y-axis path,
+#y-axis line {
+  stroke: black;
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+.bar:hover {
+  fill: white;
+}
+
+.bar {
+  fill: #663E10;
+  cursor: pointer;
+}
+
+#tooltip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+#tooltip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 20px;
+  width: 100%;
+  line-height: 1;
+  color: black;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+#tooltip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.author {
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  float: right;
+  background-color: #663E10;
+  border-radius: 0px 0px 4px 0px;
+}
+
+a:link {
+  text-decoration: none;
+}
